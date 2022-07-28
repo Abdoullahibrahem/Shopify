@@ -1,0 +1,755 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: ShopifySans, Helvetica, Arial, sans-serif;;
+}
+nav{
+    background-color:#fbf7ed;
+    height: 83px;
+    display: flex;
+    position: fixed;   /*to make the navbar fixed while scrolling*/
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+}
+nav .nav-logo{
+    line-height: 100px;    /*to center the logo vertically in the navbar*/
+    position: absolute;
+    left: 90px;
+}
+
+nav .nav-logo img{
+    height: 35px;
+}
+nav .nav-drplst1{
+    display: flex;
+    list-style: none;
+    line-height: 80px;
+    position: absolute;
+    left: 225px;
+    
+}
+nav .nav-drplst1 .startBtn1{/*btn of the list1 in navbar*/
+    border: none;
+    background-color: #fbf7ed;
+    font-size: 17px;
+    color: #42484d;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+nav .nav-drplst1 .btnHover:hover{
+    color: black;
+
+}
+nav .nav-drplst1 .startBtn2{ /*btn of the list2 in navbar*/
+    border: none;
+    background-color: #fbf7ed;
+    font-size: 17px;
+    color: #42484d;
+    font-weight: 600;
+    cursor: pointer;
+
+
+}
+nav .nav-drplst1 .startBtn3{ /*btn of the list3 in navbar*/
+    border: none;
+    background-color: #fbf7ed;
+    font-size: 17px;
+    color: #42484d;
+    font-weight: 600;
+    cursor: pointer;
+
+
+}
+nav .nav-drplst1 .startBtn4{ /*btn of the list4 in navbar*/
+    border: none;
+    background-color: #fbf7ed;
+    font-size: 17px;
+    color: #42484d;
+    font-weight: 600;
+    cursor: pointer;
+
+
+}
+nav .nav-drplst1 li{
+    margin-left: 30px;
+
+}
+.fa-angle-down{  /*angle down icons of navbar lists*/
+    font-size: 11px;
+    opacity: .6;
+    vertical-align:2px;
+
+}
+nav .nav-drplst1 .list-element{ /*first element of list in navbar*/
+    border: none;
+    font-size: 15px;
+    color: #45494d;
+    background-color: white;
+    font-weight: 600;
+
+}
+nav .nav-drplst1 .List-drplist1{
+    list-style: none;
+    border: 1px solid rgba(0, 0, 0, 0.142);
+    border-radius: 3px;
+    width: 250px;
+    background-color: white;
+    position: absolute;
+    top: 65px;
+    display: none;
+    
+
+}
+nav .nav-drplst1 .List-drplist1 li:hover{
+    background-color: rgba(128, 128, 128, 0.107);
+    border-left: 3px solid green;
+    
+}
+nav .nav-drplst1 .List-drplist1 li{
+    height: 45px;
+    line-height: 45px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #42484d;
+}
+hr{
+    width: 190px;
+    margin-left: 25px;
+    opacity: .7;
+}
+.fa-angle-right{
+    position: absolute;
+    right: 30px;
+    margin-top: 15px;
+    opacity: .7;
+}
+nav .nav-drplst1 .List-drplist2{
+    list-style: none;
+    border: 1px solid rgba(0, 0, 0, 0.142);
+    border-radius: 3px;
+    width: 250px;
+    background-color: white;
+    position: absolute;
+    top: 65px;
+    display: none;
+}
+nav .nav-drplst1 .List-drplist2 li{
+    padding: 0px;
+    margin-left:30px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #42484d;
+
+}
+nav .nav-drplst1 .List-drplist2 li:hover{
+    background-color: rgba(128, 128, 128, 0.107);
+    border-left: 3px solid green;
+    
+}
+
+nav .nav-drplst1 .List-drplist3{
+    list-style: none;
+    border: 1px solid rgba(0, 0, 0, 0.142);
+    border-radius: 3px;
+    width: 250px;
+    background-color: white;
+    position: absolute;
+    top: 65px;
+    display: none;
+
+}
+nav .nav-drplst1 .List-drplist3 li{
+    padding: 0px;
+    margin-left:30px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #42484d;
+
+}
+nav .nav-drplst1 .List-drplist3 li:hover{
+    background-color: rgba(128, 128, 128, 0.107);
+    border-left: 3px solid green;
+}
+
+nav .nav-drplst1 .List-drplist4{
+    list-style: none;
+    border: 1px solid rgba(0, 0, 0, 0.142);
+    border-radius: 3px;
+    width: 250px;
+    background-color: white;
+    position: absolute;
+    top: 65px;
+    display: none;
+
+}
+nav .nav-drplst1 .List-drplist4 li{
+    padding: 0px;
+    margin-left:30px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #42484d;
+
+}
+nav .nav-drplst1 .List-drplist4 li:hover{
+    background-color: rgba(128, 128, 128, 0.107);
+    border-left: 3px solid green;
+    
+}
+
+
+nav .nav-drplst2{
+    display: flex;
+    list-style: none;
+    line-height: 80px;
+    position: absolute;
+    right: 110px;
+}
+nav .nav-drplst2 li{
+    padding-left: 30px;
+}
+nav .nav-drplst2 a{
+    text-decoration: none;
+    color:#42484d ;
+    font-weight: 600;
+
+}
+nav .nav-drplst2 .startBtn5{
+    border: none;
+    background-color: #fbf7ed;
+    font-size: 17px;
+    color: #42484d;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+nav .nav-drplst2 .List-drplist5 li{
+    padding-left: 25px;
+    height: 45px;
+    line-height: 45px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #42484d;
+}
+nav .nav-drplst2 .List-drplist5 li:hover{
+    background-color: rgba(128, 128, 128, 0.107);
+    border-left: 3px solid green;
+}
+nav .nav-drplst2 .List-drplist5{
+    list-style: none;
+    border: 1px solid rgba(0, 0, 0, 0.142);
+    border-radius: 3px;
+    width: 250px;
+    background-color: white;
+    position: absolute;
+    top: 65px;
+    display: none;
+
+}
+nav .nav-drplst2 .trialBtn{
+    font-size: 16px;
+    color: white;
+    background-color: rgb(0,128,96);
+    padding: 13px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+nav .nav-drplst2 .trialBtn:hover{
+    background-color: rgb(1, 91, 69);
+    cursor: pointer;
+}
+header{
+    background-color:#fbf7ed;
+    height: 84vh; 
+    position: relative;
+    display: flex;
+    margin-top: 50px;
+    
+}
+header .headDiv1{
+    position: absolute;
+    left: 90px;
+    top: 60px;
+}
+
+header .headDiv1 h1{
+    color: rgb(0,76,63);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    
+}
+header .headDiv1 p{
+    font-size: 21px;
+    color: rgba(0, 0, 0, 0.538);
+    margin-top: 30px;
+}
+header .headDiv1 .emailDiv{
+    margin-top: 30px;
+}
+header .headDiv1 .emailDiv input{
+    width: 420px;
+    height: 50px;
+    display: block;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+header .headDiv1 .emailDiv ::placeholder{
+    font-size: 16px;
+    padding-left: 18px;
+}
+header .headDiv1 .emailDiv button{
+    width: 422px;
+    height: 53px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(0,128,96);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+header .headDiv1 .emailDiv button:hover{
+    background-color: rgb(1, 91, 69);
+    cursor: pointer;
+}
+header .headDiv1 .small-p{
+    font-size: 12.5px;
+    color: rgba(0, 0, 0, 0.673);
+}
+header .headDiv2{
+    position: absolute;
+    right: 110px;
+    top: 10vh;
+}
+header .headDiv2 img{
+    height: 65vh;
+}
+
+.onlineBusiness{
+    background-color: rgb(0,76,63);
+    height: 180vh;
+    color: white;
+    position: relative;
+}
+.onlineBusiness h2{
+    font-size: 38px;
+    font-weight: 500;
+    position: absolute;
+    top: 95px;
+    left: 100px;
+}
+.onlineBusiness .head-p{
+    position: absolute;
+    left: 100px;
+    color: rgba(245, 245, 245, 0.921);
+}
+.onlineBusiness .p-explore{
+    display: flex;
+    position: relative;
+    top: 155px;
+}
+.onlineBusiness .p-explore a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    right: 100px;
+}
+
+
+.onlineBusiness .onlineImg p{
+    font-size: 18px;
+    color: white;
+}
+.onlineBusiness .onlineImg img{
+    height: 445px;
+    padding-bottom: 10px;
+}
+.onlineBusiness .onlineImg a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.onlineBusiness .onlineImg a:hover{
+    text-decoration: underline;
+}
+
+.onlineBusiness .flex-img{
+    display: flex;
+    position: absolute;
+    left: 100px;
+    top: 250px;
+
+}
+.onlineBusiness .onlineImg{
+    padding-right: 15px;
+
+}
+.onlineBusiness .bestPath{
+    position: relative;
+}
+.onlineBusiness .bestPath .pathHead{
+    font-size: 32px;
+    position: absolute;
+    top: 900px;
+    
+
+}
+.onlineBusiness .bestPath .flex-path{
+    display: flex;
+    position: absolute;
+    left: 60px;
+    top: 1000px;
+   
+}
+.onlineBusiness .bestPath .pathDiv{
+    padding-left: 40px;
+}
+.onlineBusiness .bestPath .pathDiv .fa-regular,.pathIcon{
+    font-size: 38px;
+    padding-bottom: 25px;
+    color:rgb(193,240,208);
+}
+.onlineBusiness .bestPath .pathDiv .pathDivHead{
+    padding-bottom: 18px;
+}
+.onlineBusiness .bestPath .pathDiv .pathDivP{
+    font-size: 17px;
+    font-weight: thin;
+    color: rgba(255, 255, 255, 0.908);
+}
+.vidSection {
+    position: relative;
+    height: 185vh;
+}
+.vidSection .vidHead{
+    display: flex;
+    justify-content: center;
+    font-size: 38px;
+    font-weight: 100;
+    position: relative;
+    top: 100px;
+}
+.vidSection .vidP{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    color:rgba(0, 0, 0, 0.604);
+    position: relative;
+    top: 120px;
+}
+.vidSection .flex-vid{
+    display: flex;
+
+    
+}
+.vidSection .vid-position{
+    position: absolute;
+    top: 300px;
+    left: 145px;
+}
+.vidSection .flex-vid .divDescribe {
+    position: relative;
+    top: 120px;
+    padding-left: 30px;
+    
+}
+.vidSection .flex-vid .divDescribe .desc-h{
+    font-size: 28px;
+    font-weight: 100;
+    padding-bottom: 20px;
+
+}
+.vidSection .flex-vid .divDescribe .desc-p{
+    line-height: 22px;
+    color:rgba(0, 0, 0, 0.604);
+    padding-bottom: 20px;
+}
+.vidSection .flex-vid .divDescribe .desc-a{
+    text-decoration: none; 
+    color:rgb(0,128,96);
+    font-weight: 600;
+    font-size: 18px;
+}
+.vidSection .vid-position .div2Position{
+    margin-left: 35px;
+}
+.story{
+    height: 105vh;
+}
+.story .story-flex{
+    display: flex;
+    justify-content: center;
+}
+.story .storyContent{
+    background-color: rgb(0,46,37);
+    width: 652px;
+    height: 562px;
+    
+
+}
+.story .storyContent .story-h{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 42px;
+    padding-top: 65px;
+}
+.story .storyContent .storyContentImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 55px;
+    
+}
+.story .storyContent .story-p{
+    color: white;
+    text-align: center;
+    font-size: 19px;
+    padding-top: 35px;
+}
+.story .storyContent .storyBtn{
+    font-size: 16px;
+    color: white;
+    background-color: rgb(0,46,37);
+    padding: 14px 35px;
+    border: 1px solid white;
+    border-radius: 4.5px;
+    font-weight: 500;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 33px;
+
+    
+}
+.story .storyContent .storyBtn:hover{
+    background-color: white;
+    color: rgb(0,46,37);
+}
+.story .logos{
+    list-style:none;
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+    margin-left: -50px;
+}
+.story .logos li{
+    padding-left: 50px;
+}
+.help{
+    display: flex;
+}
+.help .helpContent{
+    height: 610px;
+    background-color: rgb(251,247,237);
+    width: 50%;
+    position: relative;
+}
+.help .helpContent .help-h{
+    font-size: 38px;
+    font-weight: 400;
+    position: absolute;
+    left: 100px;
+    top: 90px;
+}
+.help .helpContent .helpContentFlex {
+    position: absolute;
+    left: 100px;
+    top:230px;
+    display: flex;
+
+}
+.help .helpContent .helpContentFlex .helpContent2{
+    margin-left: 55px;
+}
+.help .helpContent  .desc-h{
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 15px;
+
+}
+.help .helpContent .desc-p{
+    line-height: 22px;
+    color:rgba(0, 0, 0, 0.604);
+    padding-bottom: 15px;
+}
+.help .helpContent .desc-a{
+    text-decoration: none; 
+    color:rgb(0,128,96);
+    font-weight: 600;
+    font-size: 16px;
+}
+.help .helpContent .helpContent3{
+    position: absolute;
+    left: 100px;
+    top:420px;
+}
+.help .helpImg{
+    width: 50%;
+    height: 610px;
+    object-fit: cover;
+
+}
+.try{
+    margin-top: 100px;
+    height: 45vh;
+    position: relative;
+}
+.try .tryHead{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 100;
+    padding-bottom: 25px;
+   
+
+}
+.try .tryP{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    color:rgba(0, 0, 0, 0.604);
+    padding-bottom: 22px;
+
+
+}
+.try .tryButton{
+    font-size: 16px;
+    color: white;
+    background-color: rgb(0,128,96);
+    padding: 16px 30px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.try .tryButton:hover{
+    cursor: pointer;
+    background-color:rgb(1, 86, 72);
+}
+.try a{
+    text-decoration: none; 
+    color:rgb(0,128,96);
+    font-weight: 600;
+    font-size: 18px;
+    position: absolute;
+    right:100px;
+    top: 280px;
+}
+
+footer{
+    background-color: rgb(0,46,37);
+    height: 83vh;
+    position: relative;
+}
+footer .titleList{
+    list-style: none;
+    display: flex;
+    padding-top: 30px;
+    position: absolute;
+    left: 67px;
+}
+footer .titleList li{
+    padding-left: 25px;
+}
+footer .titleList li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+}
+footer .titleList li a:hover{
+    border-bottom: solid white 2px;
+    padding-bottom: 24px;
+
+}
+footer .listHR{
+    position: absolute;
+    top: 72px;
+    left: 65px;
+    width: 87%;
+    border: 0.2px rgba(255, 255, 255, 0.097) solid;
+}
+footer .footerlists{
+    position: absolute;
+    left: 90px;
+    top: 100px;
+
+}
+footer .footerlists .list1-flex{
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 110px;
+}
+footer li{
+    list-style: none;
+    padding-bottom: 12px;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(184, 184, 184);
+    font-weight: 100;
+    font-size: 14px;
+}
+footer a:hover{
+    color: white;
+}
+footer h6{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    padding-bottom: 12px;
+}
+.footerlist2, .footerlist3, .footerlist4{
+    margin-top: -26px;
+    margin-left:-10px ;
+}
+footer .finalHR{
+    position: absolute;
+    top: 70vh;
+    left: -27px;
+    width: 100%;
+    border: 0.2px rgba(255, 255, 255, 0.097) solid;
+}
+footer .media{
+    position: absolute;
+    top: 75vh;
+    left: 70px;
+}
+footer .media ul{
+    display: flex;
+    
+}
+footer .media li{
+    margin-left: 25px;
+}
+footer .media li a{ 
+    background-color: white;
+    color:rgb(0,46,37) ;
+    border-radius: 50%; 
+    padding: 4px 5px;
+    font-size: 14px;
+}
